@@ -42,7 +42,7 @@ nav.mainnav a:hover{
     color: #00aef1;
     text-align: center;
     padding: 10px;
-    background: url(img/1.jpg);
+    background: url(img/28.jpg);
     background-repeat: round;
     height: 290px;
     position: relative;
@@ -80,10 +80,12 @@ nav.mainnav a:hover{
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin: 0 auto;
     
 }
 .headerdiv input{
     width: 50%;
+    max-width: 330px;
 }
 .headerdiv input, .headerdiv button{
     height: 51px;
@@ -134,7 +136,7 @@ nav.mainnav a:hover{
     position: relative;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
     .container{
         grid-template-columns:100%;
     }
@@ -155,4 +157,36 @@ nav.mainnav a:hover{
     .container{
         grid-template-columns:25% 25% 25% 25%;
     }
+}
+
+
+@media (max-width: 440px) {
+    .logo {
+        width: 41px;
+        height: 40px;
+        left: 5px;
+        top: 5px;
+    }
+    .headerdiv select#Category {
+        display: block;
+        width: 50%;
+        
+    }
+    .headerdiv input {
+        width: 78%;
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+        left: 20px;
+        padding-right: 20px;
+    }
+    .headerdiv button {
+        position: absolute;
+        right: 20px;
+    }
+    .ex p {
+    
+        margin-top: 60px;
+    }
+
 }
