@@ -3,10 +3,156 @@ padding: 0%;
 margin: 0%;
 box-sizing: border-box;
 }
-
-
 body {
-display: flex;
-background-color: green;
+background-color: white;
+width: 100%;
+position: relative;
+height: 100%;
+}
+nav.mainnav {
+    width: 100%;
+    background: black;
+    height: 30px;
 
+}
+nav.mainnav ul.left-ul {
+    float: left;
+    list-style-type: none;
+}
+ul.right-ul {
+    float: right;
+}
+
+nav.mainnav li {
+    display: inline;
+}
+
+nav.mainnav a {
+    padding: 6px;
+    text-decoration: none;
+    color: #d6caca;
+    display: inline-block;
+
+}
+nav.mainnav a:hover{
+    color: white;
+}
+.headerdiv {
+    width: 100%;
+    color: #00aef1;
+    text-align: center;
+    padding: 10px;
+    background: url(img/1.jpg);
+    background-repeat: round;
+    height: 290px;
+    position: relative;
+    padding-top: 40px;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.headerdiv h3{
+    padding: 10px;
+}
+.headerdiv form {
+    /* background: #e1a80173; */
+    width: 100%;
+ margin-bottom: 20px;
+    overflow: hidden;   height: 45px;
+}
+.headerdiv select#Category {
+    width: 145px;
+    height: 46px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+.headerdiv input{
+    width: 50%;
+}
+.headerdiv input, .headerdiv button{
+    height: 51px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: -6px;
+    
+}
+.headerdiv button{
+    cursor: pointer;
+    background: #00c6ff;
+    color: white;
+    font-weight: bold;
+}
+
+.briefing {
+    width: 100%;
+    height: 40px;
+    background: #00aef1;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.ex p {
+    font-weight: bold;
+    color: white;
+}
+
+.container{
+    display: grid;
+    
+ /* grid-template-rows: 200px 200px 200px ; */
+    margin: 0 auto;
+}
+
+.container div{
+    background-color: red;
+    padding: 10px;
+    position: relative;
+}
+
+@media (max-width: 500px) {
+    .container{
+        grid-template-columns:100%;
+    }
+}
+
+@media (min-width: 700px) {
+    .container{
+        grid-template-columns:50% 50%;
+    }
+}
+
+@media (min-width: 800px) {
+    .container{
+        grid-template-columns:33.3% 33.3% 33.3%;
+    }
+}
+@media (min-width: 900px) {
+    .container{
+        grid-template-columns:25% 25% 25% 25%;
+    }
 }
