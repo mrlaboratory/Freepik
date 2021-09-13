@@ -42,7 +42,8 @@ nav.mainnav a:hover{
     color: #00aef1;
     text-align: center;
     padding: 10px;
-    background: url(img/28.jpg);
+    background-image: linear-gradient(white, black);
+    /* background: url(img/28.jpg); */
     background-repeat: round;
     height: 290px;
     position: relative;
@@ -110,6 +111,19 @@ nav.mainnav a:hover{
     color: white;
     text-align: center;
     font-size: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.briefing span {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 99999;
+    background: #00aef1;
+    height: 100%;
+    font-weight: bold;
+    padding: 4px;
 }
 
 
@@ -130,19 +144,24 @@ nav.mainnav a:hover{
     margin: 0 auto;
 }
 
-.container div{
-    background-color: red;
-    padding: 10px;
+.container .div{
+    background-color: #bfbfbf;
+    margin: 10px;
     position: relative;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 @media (max-width: 450px) {
     .container{
         grid-template-columns:100%;
     }
+
+
+
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
     .container{
         grid-template-columns:50% 50%;
     }
@@ -173,11 +192,11 @@ nav.mainnav a:hover{
         
     }
     .headerdiv input {
-        width: 78%;
+        width: 80%;
         display: block;
         position: absolute;
         margin: 0 auto;
-        left: 20px;
+        left: 40px;
         padding-right: 20px;
     }
     .headerdiv button {
@@ -189,4 +208,78 @@ nav.mainnav a:hover{
         margin-top: 60px;
     }
 
+}
+.details {
+display: none; 
+    background: linear-gradient(transparent, #0a0a0a9c);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 2px;
+    cursor: pointer;
+    padding-left: 10px;
+    transition: 0.3s;
+
+
+}
+
+.details h2{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    bottom: 35px;
+}
+.card:hover .details {
+    display: block;
+    
+
+}
+.details .author img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+}
+.details .author p {
+    position: absolute;
+    bottom: 5px;
+    color: white;
+    left: 37px;
+    font-size: 17px;
+}
+
+.details .view {
+    position: absolute;
+    font-weight: bold;
+    right: 5px;
+    top: 5px;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.details span.fav {
+    position: absolute;
+    right: 7px;
+    bottom: 5px;
+    font-size: 1.5em !important;
+    color: white;
+}
+footer {
+    background: black;
+    width: 100%;
+}
+
+.articlemore {
+    padding: 10px;
+    background: black;
+    display: block;
+    color: white;
+    max-width: 110px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
