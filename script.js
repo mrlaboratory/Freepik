@@ -37,11 +37,11 @@ $(".btn .fa-window-close").click(function(){
   });
 });
 
-$(".clicker .down").click(function(){
-$(".clicker .down").append('<i class="fas fa-cog fa-spin"></i>');
-  $('.clicker .down .fa-download').fadeOut('fast').delay(3000).fadeIn('fast');
+$(".down").click(function(){
+$(".down").append('<i class="fas fa-cog fa-spin"></i>');
+  $('.down .fa-download').fadeOut('fast').delay(3000).fadeIn('fast');
   setTimeout(function () {
-    $('.clicker .down .fa-spin').remove();
+    $('.down .fa-spin').remove();
 
 }, 3000)
 });
