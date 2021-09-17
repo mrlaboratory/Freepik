@@ -48,6 +48,15 @@ $(".down").append('<i class="fas fa-cog fa-spin"></i>');
 
 
 
+if($("span").hasClass("tcomment")) {
+    if($(".tcomment").text().indexOf("comments") != -1){
+        $(".tcomment").text($(".tcomment").text().replace("comments",""))
+    }  else if($(".tcomment").text().indexOf("comment") != -1){
+        $(".tcomment").text($(".tcomment").text().replace("comment",""))
+    }
+ 
+}
+
 
 
 
