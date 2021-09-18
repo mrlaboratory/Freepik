@@ -53,6 +53,8 @@ if($("span").hasClass("tcomment")) {
         $(".tcomment").text($(".tcomment").text().replace("comments",""))
     }  else if($(".tcomment").text().indexOf("comment") != -1){
         $(".tcomment").text($(".tcomment").text().replace("comment",""))
+    }else if($(".tcomment").text().indexOf("No") != -1){
+        $(".tcomment").text($(".tcomment").text().replace("No","0"))
     }
  
 }
