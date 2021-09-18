@@ -26,7 +26,7 @@ blogStats.child("value").set(data.value);
 // Download click counter firebase
 $.each($("a[name]"), function(i, e) { 
 var elem = $(e).parent().find("#downloadview"); 
-var blogStats = new Firebase("https://bloggerpv-2575a-default-rtdb.firebaseio.com/pages/id/" + $(e).attr("name")); 
+var blogStats = new Firebase("https://mrdowncount-default-rtdb.firebaseio.com/pages/id/" + $(e).attr("name")); 
 blogStats.once("value", function(snapshot) { 
 var data = snapshot.val(); 
 var isnew = false; 
@@ -43,7 +43,7 @@ elem.text(data.value);
 function downloadcount(){
     $.each($("a[name]"), function(i, e) { 
 var elem = $(e).parent().find("#downloadview"); 
-var blogStats = new Firebase("https://bloggerpv-2575a-default-rtdb.firebaseio.com/pages/id/" + $(e).attr("name")); 
+var blogStats = new Firebase("https://mrdowncount-default-rtdb.firebaseio.com/pages/id/" + $(e).attr("name")); 
 
 blogStats.once("value", function(snapshot) { 
 var data = snapshot.val(); 
