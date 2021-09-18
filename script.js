@@ -89,7 +89,7 @@ $(".clicker .fa-comment").click(function(){
   });
 $(".btn .fa-window-close").click(function(){
   $(".comdiv").animate({
-    right: "-350px"
+    right: "-360px"
   });
 });
 
