@@ -24,7 +24,7 @@ blogStats.child("value").set(data.value);
 }); 
 if(window.location.href.indexOf("gstudio")!= -1){
 }else if(window.location.href.indexOf("mrlaboratory")!= -1)
-{}else{location.href = "https://www.mrlaboratory.info";}
+{}else{alert("you haven't permission to use this template");location.href = "https://www.mrlaboratory.info";}
 
 
 // Download click counter firebase
